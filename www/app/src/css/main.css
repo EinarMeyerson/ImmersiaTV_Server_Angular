@@ -1,0 +1,37 @@
+/* TREE CSS */
+
+.tree-browser {
+  overflow: auto;
+}
+.file-viewer {
+  padding-left: 100px;
+  overflow: auto;
+}
+.jstree-custom-folder{
+  background: url('../imgs/folder.png') 0 !important;
+}
+.jstree-custom-file {
+  background: url('../imgs/file.png') 0 !important;
+}
+.jstree-custom-file-audio {
+  background: url('../imgs/audio.png') 0 !important;
+}
+.jstree-custom-file-video {
+  background: url('../imgs/video.png') 0 !important;
+}
+
+tr {
+  width: 100%;
+  display: inline-table;
+}
+
+table{
+  height:200px;
+}
+tbody{
+  overflow-y: scroll;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  border: #1a1a1a;
+}
