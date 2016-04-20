@@ -140,9 +140,7 @@ module.exports = function(wagner) {
         console.log("Entramos en GEEEEEEET");
 
         if (req.query.id == 1) {
-            _p = path.resolve(__dirname, '..', '../data/ftp');
-            console.log("PATH: "+ _p);
-
+            _p = path.resolve('..', '..', '..','/data/ftp');
             processReq(_p, res);
 
         } else {
@@ -175,7 +173,7 @@ module.exports = function(wagner) {
         return {
             "id": path.join(_p, f),
             "text": f,
-            "icon" : s.isDirectory() ? 'jstree-custom-folder' : icon(filetype(path.join(_p, f))),
+            "icon" : s.isDirectory() ? 'jstree-custom-folder' : icon(filetype(path.join(path.resolve(__dirname, '..', 'Archivos_ImmersiaTV'), f))),
             "state": {
                 "opened": false,
                 "disabled": false,
