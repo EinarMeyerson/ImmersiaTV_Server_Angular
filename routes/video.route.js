@@ -53,6 +53,9 @@ module.exports = function(wagner) {
         else if (file_ext.localeCompare("h264") == 0){
             return 'jstree-custom-file-video'
         }
+        else {
+            return 'jstree-custom-file'
+        }
     }
 
 
