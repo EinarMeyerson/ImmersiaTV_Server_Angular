@@ -115,7 +115,7 @@ module.exports = function(wagner) {
             text = text + fileX;
         }
         text = text + ")\"";
-        exec(text,[{}]);
+        exec("./"+text,[{}]);
 
 
 
