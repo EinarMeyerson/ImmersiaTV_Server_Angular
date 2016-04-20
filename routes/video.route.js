@@ -140,7 +140,9 @@ module.exports = function(wagner) {
         console.log("Entramos en GEEEEEEET");
 
         if (req.query.id == 1) {
-            _p = path.resolve('/data','..','/ftp');
+            _p = path.resolve(__dirname, '..', '../data/ftp');
+            console.log("PATH: "+ _p);
+
             processReq(_p, res);
 
         } else {
