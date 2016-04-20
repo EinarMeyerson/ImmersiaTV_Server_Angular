@@ -1,10 +1,7 @@
-var passport = require('passport');
 var bodyparser = require('body-parser');
 var express = require('express');
-var status = require('http-status');
 var _ = require('underscore');
 var fs = require('fs');
-var path = require('path');
 var exec = require('child_process').exec;
 var ps = require('ps-node');
 
