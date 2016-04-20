@@ -94,7 +94,7 @@ module.exports = function(wagner) {
 
         console.log("Entramos en PLAAAAY");
 
-        var server = "/home/i2cat/GStreamer/gst-rtsp-server-1.8.1/examples/test-netclock";
+        var server = path.resolve('..', '..', '..','/home/i2cat/GStreamer/gst-rtsp-server-1.8.1/examples')+"/test-netclock";
 
         /*fs.writeFileSync("C:/Users/i2cat/WebstormProjects/ImmersiaTV_Server_Angular/Server_Scripts/prueba.bat", "@echo off");
         fs.appendFileSync("C:/Users/i2cat/WebstormProjects/ImmersiaTV_Server_Angular/Server_Scripts/prueba.bat", "\n"+"set GST_DEBUG=2, *rtsp*:5"+"\n"+"CALL "+server+" \"( ");
@@ -115,7 +115,7 @@ module.exports = function(wagner) {
             text = text + fileX;
         }
         text = text + ")\"";
-        exec("./"+text,[{}]);
+        exec("."+text,[{}]);
 
 
 
