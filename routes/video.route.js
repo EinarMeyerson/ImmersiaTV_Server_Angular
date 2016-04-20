@@ -140,7 +140,7 @@ module.exports = function(wagner) {
         console.log("Entramos en GEEEEEEET");
 
         if (req.query.id == 1) {
-            _p = path.resolve(__dirname, '..', 'GStreamer');
+            _p = path.resolve('/data','..','/ftp');
             processReq(_p, res);
 
         } else {
