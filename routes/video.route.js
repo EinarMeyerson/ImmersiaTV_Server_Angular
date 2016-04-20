@@ -4,6 +4,7 @@ var _ = require('underscore');
 var fs = require('fs');
 var exec = require('child_process').exec;
 var ps = require('ps-node');
+var path = require('path');
 
 
 module.exports = function(wagner) {
@@ -139,7 +140,7 @@ module.exports = function(wagner) {
         console.log("Entramos en GEEEEEEET");
 
         if (req.query.id == 1) {
-            _p = path.resolve(__dirname, '..', 'Archivos_ImmersiaTV');
+            _p = path.resolve(__dirname, '..', 'GStreamer');
             processReq(_p, res);
 
         } else {
