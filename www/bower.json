@@ -14,7 +14,6 @@
     "angular-translate":"2.9.2",
     "angular-tree-control":"0.2.23",
     "bootswatch":"3.3.6",
-    "jsTree-directive":"0.1.5",
     "jquery":"2.2.2"
   }
 }
