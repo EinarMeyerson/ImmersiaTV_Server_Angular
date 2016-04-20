@@ -52,7 +52,7 @@ function FileManagerCtrl($scope, $rootScope, $window, $http, FetchFileFactory){
 
     $scope.playServer = function(arrayFiles){
         console.log(arrayFiles);
-        var uri = 'http://192.168.10.91:3000/play';
+        var uri = 'http://84.88.32.108:8080/play';
         var message = arrayFiles;
         if(arrayFiles.length!=0){
             return $http({
@@ -78,7 +78,7 @@ function FileManagerCtrl($scope, $rootScope, $window, $http, FetchFileFactory){
     };
 
     $scope.stopServer = function(){
-        var uri = 'http://192.168.10.91:3000/stop';
+        var uri = 'http://84.88.32.108:8080/stop';
 
         return $http({
             method: 'POST',
